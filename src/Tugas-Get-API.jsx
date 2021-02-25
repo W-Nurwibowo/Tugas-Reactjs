@@ -60,10 +60,10 @@ export default class TugasGetAPI extends React.Component{
                                             {/* <Link to={value.url} style={{textDecoration: "none"}}> <h4 style={{color:"black"}}>{value.title}</h4> </Link> */}
                                             <div className="mt-4">
                                                 <span>
-                                                Publish at : &nbsp;{value.publishedAt.slice(11, 16)}
+                                                Publish at : &nbsp;{(value.publishedAt.slice(11, 16).split(':').join(' : '))}
                                                 </span>
                                                 <span className="">&nbsp; &nbsp;
-                                                    {value.publishedAt.slice(0, 10)}
+                                                    {(value.publishedAt.slice(0, 10).split('-').reverse().join('-'))}
                                                 </span>
                                             </div>
 
